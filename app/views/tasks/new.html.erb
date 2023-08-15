@@ -1,0 +1,12 @@
+
+<div class="form-group">
+  <%= form_with model: @task do |form| %>
+    <%= form.label(:query, "Title") %>
+    <%= form.text_field(:title, class:"form-control") %>
+    <%= form.label(:query,"Details") %>
+    <%= form.text_field(:details, class:"form-control") %>
+    <%= form.submit "Create" %>
+  <% end %>
+</div>
+
+<%# generating a route %>

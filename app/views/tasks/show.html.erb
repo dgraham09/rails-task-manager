@@ -1,0 +1,8 @@
+<%= link_to "Edit this task", edit_task_path(@task), { :class=>"btn btn-primary ms-5 my-3" } %>
+<h2 class="card rounded bg-secondary m-5 p-3 bg-opacity-10"><%= @task.title  %></h2>
+
+<p class="mx-5"><%= @task.details %></p>
+<div class="d-flex flex-column justify-content-start align-items-start">
+
+  <a class="mx-5 btn btn-primary" href="/tasks">Back to list</a>
+</div>
